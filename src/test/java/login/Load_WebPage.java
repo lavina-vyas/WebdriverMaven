@@ -1,9 +1,12 @@
 package login;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -25,13 +28,14 @@ public class Load_WebPage
 	@Test
 	public void doLogin()
 	{
+		
 		WebElement email = driver.findElement(By.cssSelector("#email"));
 		email.clear();
 		email.sendKeys("adobenoida1@gmail.com");
 		WebElement pass = driver.findElement(By.cssSelector("#pass"));
 		pass.clear();
 		pass.sendKeys("Tester@1");
-		driver.findElement(By.cssSelector("input[data-testid='royal_login_button']")).click();
+		//driver.findElement(By.cssSelector("input[data-testid='royal_login_button']")).click();
 	}
 	
 	@AfterSuite
