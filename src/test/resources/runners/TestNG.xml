@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FunctionalSuite">
+
+	<test name="Load_WebPage Test">
+		<classes>
+			<class name="login.Load_WebPage" />
+		</classes>
+	</test>
+</suite>
